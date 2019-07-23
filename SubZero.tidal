@@ -1,0 +1,20 @@
+setcps (120/60/4)
+
+d1
+$ sound "bass1/2 bass3/2"
+
+d2
+$ n (run 4) # s "drum"
+
+d3
+$ sound $ samples "arpy" (run 4)
+
+d4
+$ pan "0 1 0.25 0.75" # sound "hh sd hh"
+
+d5
+$ pan "0 1 0.25" # cat [sound "bd sn:2" # vowel "[a o]/2",
+         sound "hh*3", sound "arpy*2", sound "hh/2"
+        ]
+
+hush
