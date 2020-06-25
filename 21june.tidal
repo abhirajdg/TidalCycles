@@ -1,0 +1,8 @@
+d1 $ s "aspk*2 aspp aspk asphh" # gain "1.5 1.7 1.2 1.4" # room 0.2
+
+d2 $ stack [
+chop 8 $ s "soloops:4" # gain 0.6,
+every 3 (rev) $ chop 4 $ s "bass(3,8)" # pan sine # room 0.2
+]
+
+hush
