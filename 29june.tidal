@@ -1,0 +1,11 @@
+d1 $ stack [
+every 8 (rev) $ every 4 (density 2) $ sound "asp808*2 cp" # pan sine # silence,
+s "bass3*4 ?bass3*4" # up (scale "minor" "0 3 5 7 9") #silence,
+s "superpiano*4" # up (scale "major" "0 7 3 9") # gain 0.8
+]
+
+d2 $ off 0.25 (|+| 5)
+$ off 0.125 (|+| 12)
+$ n "[d2(3,8) b2 d2(2,5) g3(3,8)]/4" # s "arpy" # pan sine
+
+hush
