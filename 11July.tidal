@@ -1,0 +1,12 @@
+d1 $ off 0.5 (|+| n "5")
+$ juxBy 0.5 (# speed "[0.6 0.5]*4 2 [1 1]")
+$ stack [
+s "[808(7,12)]/4" # gain "0.8 1 0.9" # speed "[[0.1,0.8][0.5,1.2]]/4",
+s "[jazz(3,8)]/4" # gain "0.7 0.8 0.6"
+]
+
+d2 $ every 3 (rev)
+$ juxBy 0.25 (|+| n "5")
+$ s "superpiano(4,12)/4" # gain "0.8 0.6 0.9 0.6" # pan square # n (irand 24)
+
+hush
