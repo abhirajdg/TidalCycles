@@ -1,0 +1,10 @@
+d1 $ stack
+[
+off 0.125 (|+| 5) $ every 2 (fast 2) $ s "superfm(<3,4>,8)" # gain 0.6,
+--s "super808(3,8)" # gain 0.8,
+--s "~superhat(3,8)" # gain 0.8,
+--s "~supersnare(2,5)" # gain 0.8,
+s "superhat(5,8)" # gain 0.8
+]
+
+hush
