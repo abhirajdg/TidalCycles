@@ -1,0 +1,13 @@
+d1 $ slow 4 $ n (scale "major" ("[-1,1,3]" + "2 5 1 6") + "d4") # s "superpiano" # legato 2 # room 0.3 # velocity "0.8 0.7 0.7 0.8" # pan 0.8 # silence
+
+d2 $ every 4 (off 0.5 (|+| 7)) $ off 0.25 (|+| 5)
+$ every 8 (off 0.125 (|+| 5))
+$ slow 4 $ n (scale "major" ("1 4 5 2") + "d5") # s "superpiano" # legato 3 # room 0.3 # velocity "0.6 0.7 0.6 0.7" # pan 0 # silence
+
+d3 $ stack
+[
+s "808bd(3,8)" # silence,
+s "~808sd*2" # silence
+]
+
+hush
