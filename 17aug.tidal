@@ -1,0 +1,17 @@
+d1 $ slow 2 $ n "c'maj [c'maj f'min]" # s "superpiano" # legato 1 # room 0.3 # velocity "0.7 0.6 0.7"
+
+d2 $ every 4 (rev) $ struct (iter 8 "t(5,8)") $ n (scale "phrygian" "0 .. 12" + "c4 f4 c4") # s "supervibe" 
+    # room 0.3 # legato 2 
+    # pan perlin # gain 0.8
+
+d3 $ stack [
+s "808bd(<3,1,4>,8)",
+s "~ 808cy" # pan 0.8,
+s "808sd(2,5)" # pan 0.2
+]
+
+xfade 1 6
+
+xfade 3 4
+
+hush
