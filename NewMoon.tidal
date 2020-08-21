@@ -1,0 +1,52 @@
+-- Hi, I am Bong Lebowski from Kolkata, India
+-- I am a digital marketer by profession, and I have developed a liking for live coding music
+-- Firstly, let me thank earthlydelight on Tidal Club who shared this amazing chord progression hack
+-- Today's set is based on that method of building chords, and I'll improvise some melodies along the way
+-- I'll try to explain what I am doing here as we go
+
+d1 $ slow 4 $ n (scale "phrygian" ("[0,1,3]" + "2 5 1 6") + "f4") 
+    # s "superpiano" # legato 2 # room 0.3 # velocity 0.7 # pan 0.2
+
+-- Now let me try to explain what's going on here
+-- The chord structure that you see above is based on the phrygian mode
+-- It's a very common mode used in "exotic" music, like the flamenco for example
+-- The chord progression is a 2-5-1-6, commonly used in Jazz
+-- let's get the chords back
+
+d2 $ jux (hurry 0.5) $ iter 8 $ n (scale "phrygian" ("2 5 1 6 2 1 5 6") + "f4") 
+    # s "supervibe" # legato 2 # room 0.5 # gain 0.7
+
+-- Here I have a vibraphone running through the same progression, just without the chords
+-- I can control the melody by changing the base note, which is f4 right now
+-- Just like that
+
+d3 $ stack [
+s "bd(3,8)" # pan perlin,
+s "~808sd*2" # pan saw
+]
+
+-- This is the drums section, I don't know much about it
+-- I am pretty bad with time, trust me 
+
+d4 $ every 2 (rev) $ iter 4 $ n (scale "phrygian" ("2 5 1 6 5 6 2 1") + "f4") 
+    # s "superpiano" # pan 1 # legato 2 # room 0.5 # gain 0.7
+
+-- The piano section works in the same way as the vibraphone
+-- I am using this as an additional arpeggio
+-- If you are hearing what I am, the chord in panned to the left, and arp on right
+-- that's how you'd imagine someone play a piano, right?
+-- now back to melodies
+-- The melodies work pretty well on their own, let's see how it sounds with out the chords
+-- that's more or less it from my side
+-- will be fading out into oblivion now
+
+
+xfade 3 4
+
+xfade 2 4
+
+xfade 4 4
+
+hush
+
+Thank you!
