@@ -1,0 +1,12 @@
+// music with code from the Tidal bot
+// Tweeted on 29th September
+
+d1 $ s "bass*1 off*2 drum*3 odx*3 gabba*1 house?*1 bass2?*1 hh*4 odx?*4 arpy?*3" # pan saw
+
+d2 $ every 4 (slow 4) $ s "arpy(<3 2 5>,8)" # pan sine
+
+xfade 1 8
+
+xfade 2 10
+
+hush
