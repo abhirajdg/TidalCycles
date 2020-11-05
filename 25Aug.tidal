@@ -1,15 +1,21 @@
 d1 $ slow 4 $ n (scale "melodicMinor" ("'min" + "0 3 4 7") + ("<a4 d4 e4 e4>" + "<-12 -7>")) 
 # s "superpiano" # velocity "0.8 0.7 0.8 0.6" # djf 0.35 # room 0.3 # pan 0.3 # legato 2 # gain 0.9
 
-d2 $ iter 8 $ n (scale "minor" (run 4 + "0 3 4 <4 3 7 0> 5 6 7 <4 -2 0 5>") + ("<a4 d4 e4 e4>" + "<12 -7 5>")) 
-  # s "superpiano*6" # pan 0.8 # room 0.3 # legato 3 # velocity "0.7 0.6 0.7"
+d2 $ iter 8 $ n (scale "minor" (run 4 + "0 3 4 <4 3 7 0> 5 6 7 <4 -2 0 7>") + ("<a4 d4 e4 e4>" + "<12 -7 5>")) 
+  # s "superpiano*4 superpiano*8" # pan 0.8 # room 0.3 # legato 3 # velocity "0.7 0.6 0.7"
 
-xfadeIn 3 8 $ stack [
+d3 $ stack [
 s "aspk:0 ~ ~ ~ aspk:0 aspk:0 ~ ~" # room 0.5 # gain 1.2,
 s "asphh:0*8" # pan saw,
 s "~ ~ asps:2 ~ ~ ~ asps:2 ~" # pan sine
 ]
 
 setcps (60/60/4)
+
+xfade 1 8
+
+xfade 3 4
+
+xfade 2 8
 
 hush
