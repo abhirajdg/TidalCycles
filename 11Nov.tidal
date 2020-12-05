@@ -1,0 +1,19 @@
+resetCycles
+
+xfadeIn 1 4 $ stack [
+s "bd(<3 5 4>,8)" # gain 1.2,
+s (overlay "hi*<4 6>" "lo*8") # n (irand 5) # pan sine
+]
+
+d2 $ sometimes (palindrome) $ every 4 (# vowel "a e o")
+  $ s "arpy(<3 4 5>,8) arpy*<3 4>?" # pan perlin # vowel "i u" # legato 2 # room 0.4
+
+d3 $ s "jvbass(<6 4>,8) jvbass*<2 4>?" # pan perlin # vowel "a e o"
+
+d4 $ n "0 0 [<2 4> 0] [<2 5> <5 4>]" # sound "lighter*<4 8>" # speed 1.5 # silence
+
+xfade 1 4
+
+xfade 3 4
+
+hush
