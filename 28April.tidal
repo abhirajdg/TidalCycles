@@ -1,0 +1,9 @@
+d1 $ every 4 (density 3) $ sometimes (iter 4)
+$ s "bass1*2" # gain 1.3 # room 0.3
+
+d2 $ s "feel(<4 3>,8)" # n "0 2 4 2" # gain 1.4 # silence
+
+d3 $ every 4 (palindrome) $ s "jazz(<2 4>,8) gabba*<4 4 4 3>"
+# gain 0.9 # room 1.3 # silence
+
+hush
